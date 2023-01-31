@@ -37,8 +37,12 @@ li a{
     font-size: 1.2em;
     font-weight: 600;
 }
+li a:hover{
+    color: rgb(0, 0, 208);
+}
 a img:hover {
     transform: scale(1.5);
+    transition-duration: 1s;
 }
 .boxReseaux {
     width: 165px;
@@ -84,7 +88,6 @@ nav li {
 }
 nav li a  {
     display: inline-block;
-    padding: 19px;
 }
 /*                    Footer                      */
 footer {
@@ -125,28 +128,43 @@ footer h3{
 /*                        desktop                       */
 @media (min-width: 900px) {
     /*               menu             */
-    header {
-        height: 150px;
+   
+    header nav{
+        display: none;
     }
-    nav {
+
+    #navDesktop {
         height: 60px;
         border-radius: 0;
-        opacity: 0.7;
-        background-color: #890C99;
+        opacity: 0.8;
         position: sticky;
         width: 100%;
         top: 1px;
         z-index: 100;
     }
-    nav:hover{
-        height: 60px;
+    #navDesktop a{
+        opacity: 1;
     }
     #logoHeader img {
         display: none;
     }
-    #logoNav img {
-        display: block;
+    #logoNavDesktop img {
+        opacity: 1;
+        display: initial;
+        height: 55px;
+        width: 70px;
     }
+    #logoNavDesktop img:hover {
+        transform: scale(1.2);
+    }
+    nav ul {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
     nav img{
         display: none;
     }
