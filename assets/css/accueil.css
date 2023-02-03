@@ -242,10 +242,8 @@ main {
     #actuClip video{
         width: 75%;
     }
-    #actuClip video{
-        width: 75%;
-    }
 }
+/*                    ajustement                        */
 @media (min-width: 1200px) {
     #promoDescriptif{
         width: 70%;

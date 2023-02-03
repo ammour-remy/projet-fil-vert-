@@ -1,0 +1,17 @@
+.actuClip {
+    width: 100%;
+}
+.actuClip h2,
+.actuClip h3,
+.actuClip video{
+    margin: 15px 0;
+}
+.actuClip video {
+    width: 100%;
+    border-radius: 10px;
+}
+@media (min-width: 950px) {
+    .actuClip video{
+        width: 75%;
+    }
+}
