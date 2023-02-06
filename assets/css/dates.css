@@ -8,6 +8,7 @@
     font-size: 1.2em;
     font-weight: bold;
 }
+
 .calendrier h2 {
     margin-bottom: 30px;
     grid-area: 1 / 1 / 2 / 3;
@@ -57,6 +58,7 @@
         grid-template-rows: 1fr 1fr;
         font-size: 1.2em;
         font-weight: bold;
+        margin-bottom: 35px;
     }
     .calendrier h2 {
         grid-area: 1 / 1 / 2 / 6;
