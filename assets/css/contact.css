@@ -38,12 +38,58 @@ main section article:nth-child(odd){
 main section article img{
     width: 30px;
 }
+/*                      partie formulaire                    */
+#formulaire,
+form{
+    width: 100%;
+}
+#formulaire article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#formulaire article label{
+    text-align: left;
+    margin-bottom: 5px;
+    width: 100%;
+}
+#formulaire article input,
+#formulaire article textarea,
+#formulaire article button{
+    text-align: left;
+    border-radius: 5px;
+    width: 100%;
+}
+#formulaire article input{
+    padding: 5px;
+    
+}
+#formulaire article textarea{
+    height: 100px;
+}
+#formulaire article button{
+    text-align: center;
+    border-radius: 10px;
+    color: #890C99;
+    padding: 10px 0;
+    transition-duration:  0.7s;
+}
+#formulaire article button:hover{
+    color: beige;
+    background-color: #890C99;
+}
 @media (min-width:600px) {
     #general img{
         width: 70px;
     }
+    /*             partie redirection verte les reseaux et plateforme           */
     main section article img{
         width: 50px;
+    }
+    /*                      partie formulaire                    */
+    #formulaire {
+        margin: auto;
+        width: 80%;
     }
 }
 @media (min-width:900px) {
@@ -86,5 +132,11 @@ main section article img{
     }
     #plateforme img {
         width: 35px;
+    }
+    /*                      partie formulaire                    */
+    #formulaire {
+        display: block;
+        margin: auto;
+        width: 60%;
     }
 }
