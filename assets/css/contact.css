@@ -1,0 +1,90 @@
+/*                                general                               */
+main{
+    width: 70%;
+    margin: auto;
+}
+main img { 
+    width: 100px;
+
+}
+main section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+main section h2{
+    width: 100%;
+}
+main section article{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+/*             partie redirection verte les reseaux et plateforme           */
+#general {
+    width: 100%;
+}
+#general img{
+    width: 50px;
+}
+main section article:nth-child(even){
+    width: 30%;
+}
+main section article:nth-child(odd){
+    width: 70%;
+}
+main section article img{
+    width: 30px;
+}
+@media (min-width:600px) {
+    #general img{
+        width: 70px;
+    }
+    main section article img{
+        width: 50px;
+    }
+}
+@media (min-width:900px) {
+    /*             partie redirection verte les reseaux et plateforme           */
+    main section {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    main section article {
+        margin: 20px auto;
+    }
+    main section:first-child {
+        display: flex;
+    }
+    #membres h2,
+    #plateforme h2 {
+        grid-area: 1 / 1 / 2 / 4;
+    }
+    .crakk {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .narbo {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    .snef {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+    .contactCrakk {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    .contactNarbo {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+    .contactSnef {
+        grid-area: 3 / 3 / 4 / 4;
+    }
+    #plateforme img {
+        width: 35px;
+    }
+}
