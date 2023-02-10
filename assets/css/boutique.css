@@ -9,7 +9,7 @@ main section {
     border-radius: 10px;
     width: 90%;
 }
-section img{
+main section img{
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.499);
     width: 100%;
@@ -17,13 +17,7 @@ section img{
 section article h3{
     font-size: 2em;
     text-align: left;
-    margin: 10px 10px 10px 50px;
-}
-section article:nth-child(2)
-section article:nth-child(3)
-section article:nth-child(4)
-section article:nth-child(5){
-    height: 500px;
+    margin: 10px 10px 10px 15%;
 }
 section article:nth-child(4) p{
     font-size: 1.5em;
@@ -31,7 +25,38 @@ section article:nth-child(4) p{
     text-align: end;
     margin: 0 5px 5px 0;
 }
-section article:nth-child(5){
-    text-align: end;
-    color: #890C99;
+section article button a{
+    display: block;
+    color: black;
+}
+section article button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+section article button:hover {
+    background-color: #890C99;
+    color: beige;
+}
+@media (min-width:600px) {
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main section {
+        width: 40%;
+    }
+    section article h3{
+        font-size: 2em;
+        text-align: left;
+        margin: 10px 10px 10px 10%;
+    }
+    
+}
+@media (min-width:900px) {
+    main section {
+        width: 30%;
+    }
+    
 }
